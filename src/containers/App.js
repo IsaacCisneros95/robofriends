@@ -7,7 +7,7 @@ import "./App.css";
 
 import { setSearchField, requestRobots } from "../actions";
 
-const App = (props) => {
+const App = () => {
   const dispatch = useDispatch();
   const { searchField } = useSelector((state) => state.searchRobots);
   const { robots, isPending, error } = useSelector(
